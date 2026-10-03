@@ -50,6 +50,12 @@ video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
 .item .n{font-size:12px;letter-spacing:.16em;color:var(--mute)}
 .item h3{margin-top:14px;font-weight:600;font-size:19px;letter-spacing:-.01em}
 .item p{margin-top:10px;font-size:15px;line-height:1.55;color:var(--mute)}
+
+.origin{margin-top:64px}
+.origin h2{font-weight:600;font-size:clamp(22px,2.6vw,28px);letter-spacing:-.02em}
+.orow{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.orow .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.orow p{margin-top:10px;font-size:15px;line-height:1.55;color:var(--cloud)}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--faint);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px;color:var(--mute)}
 footer a{color:var(--cloud);text-decoration:none;border-bottom:1px solid var(--faint)}
 footer a:hover{border-color:var(--cloud)}
@@ -59,6 +65,7 @@ footer a:hover{border-color:var(--cloud)}
   .player{margin-top:32px;border-radius:10px}
   .how{margin-top:52px}
   .grid{grid-template-columns:1fr}
+  .orow{grid-template-columns:1fr;gap:20px}
 }
 </style>
 </head>
@@ -81,11 +88,20 @@ footer a:hover{border-color:var(--cloud)}
     <p class="lead">One repository, scheduled jobs and a console. Built and run with Claude Code and GitHub Actions; people stay where judgement matters.</p>
     <div class="grid">
       <div class="item"><div class="n">01</div><h3>One source</h3><p>A Git repository holds the voice, product truth, messaging and the skills every piece is written with. Content conforms to the system, not the other way around.</p></div>
-      <div class="item"><div class="n">02</div><h3>Scheduled jobs</h3><p>14 GitHub Actions workflows produce, check and ship: the monthly Blog run, the daily Framer check, the Instagram and LinkedIn batches, a content health check and the console sync.</p></div>
+      <div class="item"><div class="n">02</div><h3>Scheduled jobs</h3><p>14 GitHub Actions workflows, 11 of them on a schedule, produce, check and ship: the monthly Blog run, the daily Framer check, the Instagram and LinkedIn batches, a content health check and the console sync.</p></div>
       <div class="item"><div class="n">03</div><h3>Blog in eight steps</h3><p>Topic, brief, draft, check, German, visual run unattended about a month ahead. A morning check puts both languages into Framer three weeks out; a person reads and publishes.</p></div>
       <div class="item"><div class="n">04</div><h3>Social from the Blog</h3><p>LinkedIn runs a company and a founder voice, scheduled in Buffer weeks ahead. Instagram publishes rows of three, twice a week, from a 21-row grid rotation held in code.</p></div>
       <div class="item"><div class="n">05</div><h3>One console</h3><p>A marketing console reads state from Buffer, Framer and GA4, so what is planned, scheduled and live is visible in one place, not inferred from files.</p></div>
       <div class="item"><div class="n">06</div><h3>People where it matters</h3><p>Approving the plan, publishing in Framer and the founder's posts stay with people. Everything between runs on its own.</p></div>
+    </div>
+  </section>
+
+  <section class="origin" aria-labelledby="origin">
+    <h2 id="origin">Nothing staged</h2>
+    <div class="orow">
+      <div><div class="k">Photography</div><p>Every photograph is by its author, the photographers moodcase works with, and is credited where it is published.</p></div>
+      <div><div class="k">Screenshots</div><p>Every screen is the real product: the moodcase platform and the marketing console, captured live. A few counters were left out; nothing was added.</p></div>
+      <div><div class="k">Words</div><p>Every quote and line comes from the content system, written against its voice and product truth.</p></div>
     </div>
   </section>
 
