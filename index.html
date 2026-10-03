@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moodcase content system</title>
+<meta name="description" content="Blog, Instagram and LinkedIn: planned, produced and tracked in one place. A 1:35 walkthrough of the moodcase content system.">
+<link rel="canonical" href="https://thez-dm.github.io/moodcase-showcase/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="video.other">
+<meta property="og:site_name" content="moodcase">
+<meta property="og:title" content="moodcase content system">
+<meta property="og:description" content="Blog, Instagram and LinkedIn: planned, produced and tracked in one place.">
+<meta property="og:url" content="https://thez-dm.github.io/moodcase-showcase/">
+<meta property="og:image" content="https://thez-dm.github.io/moodcase-showcase/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:alt" content="The moodcase content system: content repo, GitHub Actions, Framer and Buffer, console">
+<meta property="og:video" content="https://thez-dm.github.io/moodcase-showcase/moodcase-content-system.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1920">
+<meta property="og:video:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="moodcase content system">
+<meta name="twitter:description" content="Blog, Instagram and LinkedIn: planned, produced and tracked in one place.">
+<meta name="twitter:image" content="https://thez-dm.github.io/moodcase-showcase/og.jpg">
+
+<style>
+@font-face{font-family:"Campton";src:url("https://framerusercontent.com/assets/uFOpDMK7Ggeb8xzXUE2CWxc0.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Campton";src:url("https://framerusercontent.com/assets/15ZMMCnU9e51vqFISYhdjIJaQ4.woff2") format("woff2");font-weight:600;font-display:swap}
+:root{--midnight:#0E1320;--cloud:#F9F9FB;--mute:rgba(249,249,251,.58);--faint:rgba(249,249,251,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--midnight)}
+body{min-height:100vh;background:radial-gradient(1200px 800px at 50% 30%,#151C2D 0%,var(--midnight) 70%);color:var(--cloud);
+  font-family:Campton,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1180px;margin:0 auto;padding:64px 24px 48px}
+header{display:flex;flex-direction:column;align-items:center;text-align:center}
+.wordmark{height:40px;width:auto}
+.kicker{margin-top:22px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+h1{margin-top:28px;text-wrap:balance;font-weight:600;font-size:clamp(28px,4.4vw,52px);line-height:1.1;letter-spacing:-.02em;max-width:820px}
+.player{margin-top:44px;border-radius:14px;overflow:hidden;background:#000;
+  box-shadow:0 40px 100px rgba(0,0,0,.5),0 0 0 1px var(--faint)}
+video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+.facts{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--faint)}
+.fact{padding:24px 0 0}
+.fact b{display:block;font-weight:600;font-size:clamp(34px,5vw,56px);letter-spacing:-.03em;line-height:1}
+.fact span{display:block;margin-top:10px;font-size:15px;color:var(--mute);line-height:1.4}
+.note{margin-top:14px;font-size:13px;color:var(--mute)}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--faint);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px;color:var(--mute)}
+footer a{color:var(--cloud);text-decoration:none;border-bottom:1px solid var(--faint)}
+footer a:hover{border-color:var(--cloud)}
+@media (max-width:640px){
+  main{padding:40px 16px 32px}
+  .wordmark{height:32px}
+  .player{margin-top:32px;border-radius:10px}
+  .facts{grid-template-columns:1fr;gap:4px}
+  .fact{padding:18px 0 0}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="wordmark" src="wordmark.svg" alt="moodcase">
+    <div class="kicker">Content system</div>
+    <h1>Blog, Instagram and LinkedIn: planned, produced and tracked in one place.</h1>
+  </header>
+
+  <div class="player">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="moodcase-content-system.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <section class="facts" aria-label="Since June 2026">
+    <div class="fact"><b>9</b><span>Blog articles, each in English and German</span></div>
+    <div class="fact"><b>60</b><span>Instagram posts on @moodcase.io</span></div>
+    <div class="fact"><b>89</b><span>LinkedIn posts, company page and founder</span></div>
+  </section>
+  <p class="note">Published since June 2026.</p>
+
+  <footer>
+    <a href="https://www.moodcase.io">moodcase.io</a>
+    <span>Music: “Trap Beat 6” by Arulo, via Mixkit</span>
+  </footer>
+</main>
+</body>
+</html>
